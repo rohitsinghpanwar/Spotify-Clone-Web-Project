@@ -1,0 +1,119 @@
+@media screen and (orientation:portrait) {
+
+    header {
+        width: initial;
+        height: 16vh;
+    }
+    .music p{
+        width: 60vw;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    lib {
+        height: 50vh;
+    }
+    #albums{
+        height:40vh ;
+    }
+    .songinfo {
+        width: initial;
+    }
+
+    .songtime {
+        top: 2vh;
+        left: -1vw;
+
+    }
+
+    liblogo {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #playpause {
+        width: 97vw;
+        height: 22vh;
+        bottom: initial;
+        flex-direction: column-reverse;
+        background-color: #4242424f;
+        border: transparent;
+        border-radius: 10px;
+    }
+
+    #pnbtn {
+        top: 1.5vh;
+        left: initial;
+        width: 25vw;
+    }
+
+    #contain {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mdis {
+        height: 30vh;
+        justify-content: space-evenly;
+        width: initial;
+        gap: initial;
+    }
+
+    .card {
+        width: 80px;
+        height: 20vh;
+    }
+
+    .card img {
+        width: 80px;
+    }
+
+    #volume {
+        position: relative;
+        width: 5vw;
+        top: 0.4vh;
+
+    }
+
+    .sontime {
+        left: initial
+    }
+
+    #volrange {
+        position: relative;
+        left: 5vw;
+        top: 1vh;
+    }
+
+    input[type='range'] {
+        border-radius: 5px;
+        height: 5px;
+        width: 50%;
+        margin: 0;
+        accent-color: white;
+        appearance: none;
+        background-color: #28d923;
+    }
+
+    .seekbar {
+        width: 50%;
+        position: relative;
+        top: 5vh;
+    }
+
+    #cancel {
+        position: relative;
+        right: 5vw;
+        display: none;
+    }
+
+}
+
+@media screen and(orientation:landscape) {
+    header {
+        height: 80vh;
+    }
+
+}

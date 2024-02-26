@@ -1,0 +1,302 @@
+body {
+    background-color: black;
+    color: white;
+}
+#cancel{
+    display: none;
+}
+header {
+    width: 30vw;;
+    height: 98vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: transparent;
+    text-align: center;
+}
+#pnbtn{
+    position: relative;
+    left: 3vw;
+    width: 7vw;
+    justify-content: space-around;
+    display: flex;
+    
+}
+.songtime{
+    position: relative;
+    left: 4vw;
+
+}
+#navbar {
+    height: 10vh;
+    margin: 0;
+    text-align: left;
+    border-radius: 7px;
+    border: transparent;
+    background-color: rgba(128, 128, 128, 0.157);
+}
+
+.scroll {
+    margin: 6px;
+    border: transparent;
+    border-radius: 10px;
+    background: conic-gradient(rgb(208, 213, 57), grey);
+}
+.songList{
+    height: 60vh;
+    overflow-y: scroll;
+    scrollbar-color: rgb(107, 107, 185) #222222;
+    scrollbar-arrow-color: red;
+}
+lib {
+    border: transparent;
+    border-radius: 5px;
+    background-color:rgba(128, 128, 128, 0.157) ;
+    overflow:hidden;
+    height: 68vh;
+    border: transparent;
+}
+
+lib::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* search css */
+/* input {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50vw;
+    height: 30px;
+} */
+
+.bneLcE {
+
+    fill: white;
+    width: var(--encore-graphic-size-decorative-base, 24px);
+    height: var(--encore-graphic-size-decorative-base, 24px);
+
+}
+
+.home {
+    position: relative;
+    top: -6px;
+    left: 3px;
+
+
+}
+
+.bar {
+    opacity: 0.5;
+}
+
+.bar:hover {
+    transition: 0.5s ease-in;
+    opacity: initial;
+}
+
+option {
+    background-color: grey;
+    font-style: italic;
+    font-size: larger;
+}
+
+.dYnaPI {
+    margin: 8px;
+    height: 15px;
+    fill: currentColor;
+    position: relative;
+    
+
+
+}
+
+liblogo {
+
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 10px 100px 10px;
+
+    column-gap: 70px;
+}
+
+#library {
+    position: relative;
+    top: 3px;
+}
+
+#libsong {
+    padding: 0;
+}
+
+
+.music {
+    transition: all 0.4s ease-out;
+        font-style: italic;
+        width: 90%;
+        padding: 10px;
+    
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+}
+.music p{
+    width: 20vw;
+}
+
+
+
+#libsong li {
+
+    border: transparent;
+    border-radius: 10px;
+    margin: 10px;
+    height: 70px;
+
+}
+
+.img {
+    position: relative;
+    top: 15px;
+    height: 30px;
+    
+}
+
+.card {
+    justify-content: space-evenly;
+    height: 40vh;
+    width: 20vw;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(9, 9, 9);
+    transition: all 0.4s ease-in;
+}
+.card:hover{
+    background-color: rgb(33, 35, 35);
+    
+}
+#mdis {
+    overflow: auto;
+    width:65vw ;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card img{
+    
+    height: 150px;
+    
+    transition: all 0.5s ease-in-out;
+}
+.card i{
+    font-size: 3vw;
+    color:lightseagreen ;
+}
+#albums{
+    padding: 5px;
+    border: 1px solid indigo;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+    gap: 10px;
+    height: 77vh;
+}
+#label{
+    border: transparent;
+    border-radius: 5px;
+    background:linear-gradient(60deg,rgba(171, 231, 136, 0.898),rgb(55, 249, 187),rgb(234, 196, 46));
+    font-size: xx-large;
+}
+
+
+#playpause {
+    border-radius: 10px;
+    background: #34313138;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    position: absolute;
+    width: 98vw;
+    height: 12vh;
+    
+}
+#volrange{
+    align-items: center;
+    display: flex;
+    
+}
+#volume{
+    transition: all 0.4s ease-in-out;
+    top: 0.8vh;
+    width: 3vw;
+    position: relative;
+}
+.seekbar {
+
+    height: 4px;
+    width: 30%;
+    background: linear-gradient( 45deg ,white 40%,rgb(39, 116, 39));
+    border-radius: 10px;
+    position: absolute;
+    bottom: 7px;
+
+    cursor: pointer;
+}
+.songinfo{
+    width: 32vw;
+    font-style: italic;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: rgb(248, 238, 238);
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.4s;
+}
+
+#contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98vw;
+}
+/* #volbar{
+    appearance: slider-vertical;
+    accent-color:yellow;
+    width: 30px;
+    height: 65px;
+
+} */
+input[type='range'] {
+    border-radius: 5px;
+    width: 15vw;
+    height: 1vh;
+    accent-color: white;
+    appearance: none;
+    background-color: #28d923;
+}
+
