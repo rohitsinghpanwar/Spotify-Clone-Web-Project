@@ -17,7 +17,8 @@ function secondsToMinutesSeconds(seconds) {
 }
 //main function is responsible for fetching the music folder
 async function main(folder) {
-    let a = await fetch(`http://127.0.0.1:5500/new%20project/songs/${folder}/`);
+    let a = await fetch(`https://github.com/rohitsinghpanwar/Spotify-Clone-Web-Project/tree/main/new%20project/songs/${folder}/`);
+    
     let response = await a.text();
     let b = document.createElement("div");
     b.innerHTML = response;
@@ -59,7 +60,7 @@ async function main(folder) {
 }
 // this funtion is the sole of whole website cause it plays the music
 function sang(crakk, pause = false) {
-    playmusic.src = `http://127.0.0.1:5500/new%20project/songs/${currfolder}/` + crakk;
+    playmusic.src = `https://github.com/rohitsinghpanwar/Spotify-Clone-Web-Project/tree/main/new%20project/songs/${currfolder}/` + crakk;
 
     if (!pause) {
         playmusic.play()
@@ -146,7 +147,7 @@ async function playit() {
 }
 // this function is responsible for displaying contents of albums 
 async function displayAlbums() {
-    let a = await fetch("http://127.0.0.1:5500/new%20project/songs/")
+    let a = await fetch("https://github.com/rohitsinghpanwar/Spotify-Clone-Web-Project/tree/main/new%20project/songs")
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -161,7 +162,7 @@ async function displayAlbums() {
             let cardcontainer = document.querySelector("#mdis");
             cardcontainer.innerHTML = cardcontainer.innerHTML + `
           <div class="card" data-folder="${folder}">
-            <img src="http://127.0.0.1:5500/new%20project/songs/${folder}/cover.jpg" alt="">
+            <img src="https://github.com/rohitsinghpanwar/Spotify-Clone-Web-Project/tree/main/new%20project/songs/${folder}/cover.jpg" alt="">
             <i>${response.artist}</i>
             <i>${response.title}</i>
           </div>`
